@@ -1,8 +1,6 @@
 FROM node:7
 
 ENV USER terry
-RUN git config --global user.name "Terry Chen"
-RUN git config --global user.email seterrychen@gmail.com
 
 RUN apt-get update \
   && apt-get install -y sudo vim \
@@ -14,6 +12,8 @@ RUN useradd -m $USER \
 
 USER $USER
 WORKDIR /home/$USER
+RUN git config --global user.name "Terry Chen"
+RUN git config --global user.email seterrychen@gmail.com
 
 # hexo
 RUN sudo npm install hexo-cli -g
