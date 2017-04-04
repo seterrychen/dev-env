@@ -13,7 +13,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " util
 Plugin 'kien/ctrlp.vim'
-" Plugin 'simplyzhao/cscope_maps.vim'
 Plugin 'bling/vim-airline'
 Plugin 'Lokaltog/vim-easymotion'
 
