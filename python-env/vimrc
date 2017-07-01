@@ -1,0 +1,54 @@
+" Vundle section
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" util
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'Lokaltog/vim-easymotion'
+
+" python
+Plugin 'nvie/vim-flake8'
+
+" about color
+Plugin 'altercation/vim-colors-solarized'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
+
+" map setting
+nmap fu :CtrlPBuffer<CR>
+
+" tab setting
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" color
+syntax on
+
+" airline setting
+set laststatus=2
+let g:airline_powerline_fonts = 1
+set nu
+set cursorline
+colorscheme solarized
+set background=dark
+highlight ColorColumn ctermbg=red 
+set colorcolumn=80
+
+set pastetoggle=<F10>
