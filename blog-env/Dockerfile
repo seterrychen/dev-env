@@ -1,6 +1,7 @@
 FROM node:6-alpine
 
 # install hexo
+RUN apk add --no-cache git
 RUN npm install -g hexo-cli
 
 WORKDIR /blog
